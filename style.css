@@ -178,6 +178,8 @@ legend {
     display: -webkit-flex;
     display: -ms-flex;
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
 }
 
 .fotki {
