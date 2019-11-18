@@ -33,6 +33,7 @@ nav {
     text-align:center;
     display: flex;
     display: -ms-flex;
+    display: -webkit-flex;
     background-color:white;
 }
 
@@ -92,6 +93,7 @@ nav > li > ul > li:hover a {
 nav > li:hover > ul {
     display: flex;
     display: -ms-flex;
+    display: -webkit-flex;
     flex-direction: column;
     width: auto;
 
@@ -104,6 +106,7 @@ nav > li:hover > a {
 article {
     display: flex;
     display: -ms-flex;
+    display: -webkit-flex;
     flex-direction: column;
     background: rgba(255, 255, 255, 0.4);
     margin-bottom: 15px;
@@ -136,6 +139,7 @@ legend {
 #przyciski {
     display: flex;
     display: -ms-flex;
+    display: -webkit-flex;
 }
 
 #przyciski .przycisk {
@@ -171,6 +175,7 @@ legend {
 
 .galeria {
     display: flex;
+    display: -webkit-flex;
     display: -ms-flex;
     flex-wrap: wrap;
 }
@@ -229,6 +234,7 @@ tr:nth-child(odd){
 
     background-color: white;
     display: flex;
+    display: -webkit-flex;
     display: -ms-flex;
 }
 
@@ -243,6 +249,7 @@ tr:nth-child(odd){
 
 #split li a {
     display: flex;
+    display: -webkit-flex;
     display: -ms-flex;
     width: 88px;
     height: 88px;
