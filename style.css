@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url("grafiki/index/tlo.jpg");
+    background-size: 100%;
+    background-position-y: bottom;
+    background-attachment: fixed;
+}
+
+#wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+header img {
+    width: 100%;
+
+}
+
+nav {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    font-size:18px;
+    height:2em;
+    line-height:2em;
+    text-align:center;
+    display: flex;
+    background-color:white;
+}
+
+nav > li {
+    float:left;
+    background-color:midnightblue;
+    width:25%;
+    margin-left:1px;
+    height:2em;
+}
+
+nav a {
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:0 5px;
+}
+
+
+nav > li > a:hover {
+    color:black;
+}
+
+nav > li:hover {
+    background-color: dodgerblue;
+}
+
+
+nav > li > ul {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    display:none;
+    position: relative;
+}
+
+nav > li:first-child {
+    margin-left:0;
+}
+
+nav > li > ul > li > a {
+    border-top:1px solid #FFF;
+}
+
+nav > li > ul > li {
+    background-color:midnightblue;
+}
+
+nav > li > ul > li:hover {
+    background-color: dodgerblue;
+}
+
+nav > li > ul > li:hover a {
+    color:black;
+}
+
+nav > li:hover > ul {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+
+}
+
+nav > li:hover > a {
+    color:black;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.4);
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+.art1 {
+    flex: 1;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.kontakt {
+    margin: 20px;
+}
+
+legend {
+    text-align: center;
+    font-size: 18px;
+}
+
+#przyciski {
+    display: flex;
+}
+
+#przyciski .przycisk {
+    flex-basis: 50%;
+    margin: 10px 10%;
+    background-color: midnightblue;
+    color: white;
+    height: 40px;
+    font-size: 15px;
+}
+
+#przyciski .przycisk:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#clear {
+}
+
+.kontakt p {
+    margin: 10px;
+}
+
+
+
+#graf_index_art1 {
+
+    padding: 20px 0;
+    with: 100%;
+    align-items: center;
+
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fotki {
+    width: 45%;
+    margin: 10px;
+}
+
+.fotki:hover {
+    transform: scale(1.3);
+    transition: 1s;
+}
+
+table * {
+    border-style: outset;
+    border-color: midnightblue;
+
+}
+
+table {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+tr {
+    height: 50px;
+}
+
+tr.wartosci_tabeli:hover{
+    background-color: gray;
+}
+
+td:hover {
+    background-color: black;
+    color: white;
+}
+
+th {
+    background-color: midnightblue;
+    color: white;
+}
+
+tr:nth-child(odd){
+    background-color: dodgerblue;
+}
+
+/* Dałem tutaj split, bo nie pasuje mi do nawigacji totalnie, stad szybciej go pozniej usune */
+
+#split {
+    list-style-type: none;
+    margin: 0 15% 15px;
+    height: 88px;
+
+    background-color: white;
+    display: flex;
+}
+
+#split li {
+
+    margin-left: 15px;
+}
+
+#split li:first-child {
+    margin-left: 0;
+}
+
+#split li a {
+    display: flex;
+    width: 88px;
+    height: 88px;
+    background-image: url(grafiki/index/split.png);
+}
+
+#split #granatowy a {}
+#split #czarny a { background-position:0 176px; }
+#split #niebieski a { background-position:0 88px; }
+
+#split #granatowy a:hover { background-position:88px 0; }
+#split #czarny a:hover { background-position:88px 176px; }
+#split #niebieski a:hover { background-position:88px 88px; }
+/*------------------------------------------------------------------------------------------- */
+
+@keyframes animacja {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#muzyka {
+    margin-top: 35px;
+    width: 100%;
+    padding: 15px;
+    height: 127.4px;
+    background-color: dodgerblue;
+    text-align: center;
+    color: white;
+    animation-name: animacja;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+audio {
+    margin-bottom: 20px;
+    width: 100%;
+    animation-name: animacja;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+#muzyka  a {
+    color: white;
+}
+
+#video {
+    width: 100%;
+    background-color: midnightblue;
+}
+
+video {
+    background-color: white;
+    margin-left: 30%;
+}
+
+footer {
+    height: 40px;
+    background-color: midnightblue;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    clear: bottom;
+}
