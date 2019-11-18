@@ -304,3 +304,29 @@ footer {
     text-align: center;
     clear: bottom;
 }
+
+@media(max-width: 500px){
+    .fotki {
+        width: 80%;
+        margin: 10%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    fieldset {
+        font-size: 12px;
+    }
+    footer {
+        font-size: 10px;
+    }
+
+    nav {
+        font-size: 14px;
+    }
+}
