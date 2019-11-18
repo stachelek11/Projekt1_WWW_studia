@@ -209,6 +209,7 @@ legend {
 
 .fotki {
     width: 45%;
+    height: 100%;
     margin: 10px;
 }
 
@@ -392,4 +393,10 @@ footer {
     nav {
         font-size: 14px;
     }
+}
+
+span.err {
+    color: red;
+    font-weight: bold;
+    padding-left: 5px;
 }

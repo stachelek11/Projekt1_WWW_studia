@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Spec Detailing</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
@@ -32,11 +31,13 @@
         <article>
             <h2>Wypełnij formularz, a my skontaktujemy sie w sprawie dogadania ceny i daty.</h2>
             <aside class="kontakt">
-            <form action="xxx@gmail.com">
-                <fieldset>
+            <form class="form">
+                <fieldset actiom="#">
                     <legend>Wypełnij wszystkie pola!</legend>
-                    <p><label>Imię</label> <input type ="text" placeholder="Damian" pattern="[A-Za-z]{2,40}" title="Damian" required/></p>
-                    <p><label>Nazwisko</label> <input type ="text" placeholder="Stachelek" pattern="[A-Za-z]{2,40}" title="Stachelek" required/></p>
+                    <p><label>Imię</label> <input type ="text" placeholder="Damian" title="Damian" name="f_imie" id="imie"/>
+                        <span class="err imie-err" id="e_imie" > </span></p>
+                    <p><label>Nazwisko</label> <input type ="text" placeholder="Stachelek" title="Stachelek" name="f_nazwisko"/>
+                        <span class="err nazwisko-err" id="e_nazwisko" > </span></p></p>
                     <p>Typ pojazdu: </p>
                     <p>
                         <label>
@@ -51,7 +52,7 @@
                     </p>
                     <p>Rodzaj usługi: </p>
                         <label><p>
-                            <input type="checkbox" name="rodzaj_usługi[]" value="Korekta_lakieru"> Korekta lakieru
+                            <input type="checkbox" name="rodzaj_usługi[]" value="Korekta_lakieru" checked> Korekta lakieru
                         </label></p>
                         <label><p>
                             <input type="checkbox" name="rodzaj_usługi[]" value="Zabezpieczenie_lakieru_powłokami"> Zabezpieczenie lakieru powłokami
@@ -68,13 +69,14 @@
                         </label></p>
 
 
-                    <p><label>Telefon </label><input type="tel" name="telefon" placeholder="601102203" pattern="[0-9]{9}" title="123456789" required/></p>
-                    <p><label>E-mail </label><input type="email" name="email" placeholder="stachelek@gmail.com" required/></p>
+                    <p><label>Telefon </label><input type="tel" name="telefon" class="tel" placeholder="601102203" title="123456789"/>
+                        <span class="tel-err err" id="tel" > </span></p>
+                    <p><label>E-mail </label><input type="email" class="email" name="email" placeholder="stachelek@gmail.com"/>
+                        <span class="email-err err" id="email" > </span></p>
 
                 </fieldset>
                 <p id="przyciski">
-
-                    <button type="submit" class="przycisk">Zatwierdź</button>
+                    <input  type="submit" value="Wyślij" class="przycisk submitBtn" id="button" name="submit">
                     <input id="clear" class="przycisk" type="reset" value="Wyczyść" />
                 </p>
             </form>
@@ -83,6 +85,6 @@
     </section>
     <footer>Wszelkie prawa do zdjęć/grafik/filmów/tekstów zatrzeżone &copy</footer>
 </main>
-
+<script src="formularz.js"></script>
 </body>
 </html>
