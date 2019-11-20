@@ -24,7 +24,7 @@ header img {
 
 }
 
-nav {
+ ol {
     list-style-type:none;
     padding:0;
     margin:0;
@@ -40,7 +40,7 @@ nav {
     background-color:white;
 }
 
-nav > li {
+ol > li {
     float:left;
     background-color:midnightblue;
     width:25%;
@@ -48,7 +48,7 @@ nav > li {
     height:2em;
 }
 
-nav a {
+ol a {
     display:block;
     color:white;
     text-decoration:none;
@@ -56,16 +56,16 @@ nav a {
 }
 
 
-nav > li > a:hover {
+ol > li > a:hover {
     color:black;
 }
 
-nav > li:hover {
+ol > li:hover {
     background-color: dodgerblue;
 }
 
 
-nav > li > ul {
+ol > li > ul {
     list-style-type:none;
     padding:0;
     margin:0;
@@ -73,27 +73,27 @@ nav > li > ul {
     position: relative;
 }
 
-nav > li:first-child {
+ol > li:first-child {
     margin-left:0;
 }
 
-nav > li > ul > li > a {
+ol > li > ul > li > a {
     border-top:1px solid #FFF;
 }
 
-nav > li > ul > li {
+ol > li > ul > li {
     background-color:midnightblue;
 }
 
-nav > li > ul > li:hover {
+ol > li > ul > li:hover {
     background-color: dodgerblue;
 }
 
-nav > li > ul > li:hover a {
+ol > li > ul > li:hover a {
     color:black;
 }
 
-nav > li:hover > ul {
+ol > li:hover > ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -107,7 +107,7 @@ nav > li:hover > ul {
 
 }
 
-nav > li:hover > a {
+ol > li:hover > a {
     color:black;
 }
 
@@ -145,6 +145,14 @@ h2 {
 .kontakt {
     margin: 20px;
 }
+fieldset {
+    padding: 10px;
+}
+
+.kontakt p {
+    margin: 10px 0;
+}
+
 
 legend {
     text-align: center;
@@ -180,12 +188,6 @@ legend {
 
 #clear {
 }
-
-.kontakt p {
-    margin: 10px;
-}
-
-
 
 #graf_index_art1 {
 
@@ -389,7 +391,7 @@ footer {
         font-size: 10px;
     }
 
-    nav {
+    ol {
         font-size: 14px;
     }
 }

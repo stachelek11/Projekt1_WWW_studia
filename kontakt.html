@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang="pl" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
 
@@ -17,6 +17,7 @@
         <img src="grafiki/index/nagłówek.PNG" alt="Spec Detailing Igor Perwenis">
     </header>
     <nav>
+        <ol>
         <li><a href="index.html">Start</a></li>
         <li id="galeria"><a href="#">Galeria</a>
         <ul>
@@ -26,18 +27,19 @@
         </li>
         <li><a href="cennik.html">Cennik</a></li>
         <li> <a href="kontakt.html">Kontakt</a></li>
+        </ol>
     </nav>
     <section>
         <article>
             <h2>Wypełnij formularz, a my skontaktujemy sie w sprawie dogadania ceny i daty.</h2>
             <aside class="kontakt">
             <form class="form">
-                <fieldset actiom="#">
+                <fieldset>
                     <legend>Wypełnij wszystkie pola!</legend>
                     <p><label>Imię</label> <input type ="text" placeholder="Damian" title="Damian" name="f_imie" id="imie"/>
                         <span class="err imie-err" id="e_imie" > </span></p>
                     <p><label>Nazwisko</label> <input type ="text" placeholder="Stachelek" title="Stachelek" name="f_nazwisko"/>
-                        <span class="err nazwisko-err" id="e_nazwisko" > </span></p></p>
+                        <span class="err nazwisko-err" id="e_nazwisko" > </span></p>
                     <p>Typ pojazdu: </p>
                     <p>
                         <label>
@@ -51,27 +53,27 @@
                         </label>
                     </p>
                     <p>Rodzaj usługi: </p>
-                        <label><p>
+                        <label>
                             <input type="checkbox" name="rodzaj_usługi[]" value="Korekta_lakieru" checked> Korekta lakieru
-                        </label></p>
-                        <label><p>
+                        </label><br>
+                        <label><br>
                             <input type="checkbox" name="rodzaj_usługi[]" value="Zabezpieczenie_lakieru_powłokami"> Zabezpieczenie lakieru powłokami
-                        </label></p>
-                        <label><p>
+                        </label><br>
+                        <label><br>
                             <input type="checkbox" name="rodzaj_usługi[]" value="Pranie_tapicerki"> Pranie tapicerki
-                        </label></p>
-                        <label><p>
+                        </label><br>
+                        <label><br>
                             <input type="checkbox" name="rodzaj_usługi[]" value="Czyszczenie_tapicerki_skórzanej"> Czyszczenie tapicerki skórzanej
-                        </label></p>
-                        <label><p>
-                            <p><input type="checkbox" name="rodzaj_usługi[]" value="Inne"> Inne</p>
-                            <p><textarea name="rodzaj_usługi[]" placeholder="Inne..."></textarea></p>
-                        </label></p>
+                        </label><br>
+                        <label><br>
+                            <input type="checkbox" name="rodzaj_usługi[]" value="Inne"> Inne<br>
+                            <br><textarea name="rodzaj_usługi[]" placeholder="Inne..."></textarea>
+                        </label>
 
 
                     <p><label>Telefon </label><input type="tel" name="telefon" class="tel" placeholder="601102203" title="123456789"/>
                         <span class="tel-err err" id="tel" > </span></p>
-                    <p><label>E-mail </label><input type="email" class="email" name="email" placeholder="stachelek@gmail.com"/>
+                    <p><label>E-mail </label><input type="email" class="email" name="email" title="mail" placeholder="stachelek@gmail.com"/>
                         <span class="email-err err" id="email" > </span></p>
 
                 </fieldset>
@@ -83,7 +85,7 @@
             </aside>
         </article>
     </section>
-    <footer>Wszelkie prawa do zdjęć/grafik/filmów/tekstów zatrzeżone &copy</footer>
+    <footer>Wszelkie prawa do zdjęć/grafik/filmów/tekstów zatrzeżone &copy;</footer>
 </main>
 <script src="formularz.js"></script>
 </body>
