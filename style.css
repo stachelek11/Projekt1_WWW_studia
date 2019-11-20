@@ -168,7 +168,6 @@ legend {
 }
 
 #przyciski .przycisk {
-    -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     margin: 10px 10%;
     background-color: midnightblue;
