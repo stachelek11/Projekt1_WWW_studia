@@ -269,8 +269,6 @@ tr:nth-child(odd){
     list-style-type: none;
     margin: 0 15% 15px;
     height: 88px;
-
-    background-color: white;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -399,6 +397,11 @@ footer {
     ol {
         font-size: 14px;
     }
+
+    #split{
+        margin: 10px;
+    }
+
 }
 
 span.err {
