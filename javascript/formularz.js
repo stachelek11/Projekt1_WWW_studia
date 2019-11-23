@@ -1,5 +1,5 @@
-const form = document.querySelector('.form')
-const btn = document.querySelector(".submitBtn")
+const form = document.querySelector('.form');
+const btn = document.querySelector(".submitBtn");
 
 function validate(form) {
     checkStringAndFocus(form.elements["f_imie"], "Błędne imie");
@@ -42,13 +42,13 @@ const checkPhonenumber = (number) => {
         clearError(document.querySelector(".tel-err"));
         return false
     }
-}
+};
 
 
 
 function checkEmail(str) {
-    const pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    let isValid = pattern.test(str.toLowerCase())
+    const pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    let isValid = pattern.test(str.toLowerCase());
     if (isValid) {
         return true
     }
@@ -77,9 +77,9 @@ const clearError = (element) => {
     setTimeout(() => {
         element.textContent = "";
     }, 3000)
-}
+};
 
 btn.addEventListener('click', (e) => {
-    e.preventDefault()
+    e.preventDefault();
     validate(form)
-})
+});
