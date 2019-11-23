@@ -325,6 +325,7 @@ footer {
     line-height: 40px;
     text-align: center;
     width: 100%;
+    max-width: 1000px;
     bottom: 10px;
 }
 
